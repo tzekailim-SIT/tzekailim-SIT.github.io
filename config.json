@@ -1,0 +1,204 @@
+{
+  "profile": {
+    "name": "Tze Kai",
+    "fullName": "Tze Kai Lim",
+    "title": "Undergraduate in Computing Science at SIT × University of Glasgow",
+    "tagline": "Computing Science · Aviation · Innovation",
+    "bio": "Undergraduate in Computing Science at SIT × University of Glasgow. Passionate about aviation technology, autonomous systems, and building innovative solutions that bridge the gap between software and the physical world.",
+    "photo": "/images/tzekai-profile.jpeg",
+    "email": "Tzekailim@outlook.sg",
+    "linkedin": "https://www.linkedin.com/in/tzekailim/",
+    "github": "https://github.com/tzekailim-SIT"
+  },
+  "stats": {
+    "connections": "500+",
+    "followers": "718",
+    "certifications": "11",
+    "repositories": "21"
+  },
+  "about": {
+    "journey": "I am currently pursuing a Bachelor of Science (Honours) in Computing Science at Singapore Institute of Technology, in partnership with the University of Glasgow. My passion lies at the intersection of aviation and technology.",
+    "journeyExtended": "As the founder and President of SIT Aviation Society, I lead initiatives that bridge the gap between aviation enthusiasts and emerging technologies like drones and flight simulation. My experience spans from military leadership as a Platoon Commander in the Singapore Army to developing RPA solutions at Changi Airport Group.",
+    "achievements": [
+      { "text": "NSF of The Year 2024 - Singapore Army", "color": "cyan" },
+      { "text": "Presidential Garden Reception 2024 Invitee", "color": "purple" },
+      { "text": "Founder of SIT Aviation Society", "color": "pink" },
+      { "text": "Class Representative - Computing Science", "color": "blue" }
+    ],
+    "photos": {
+      "main": {
+        "src": "/images/presidential-reception-full.jpeg",
+        "title": "Presidential Garden Reception 2024",
+        "subtitle": "Invited by the President of Singapore"
+      },
+      "gallery": [
+        {
+          "src": "/images/sit-aviation-team.jpeg",
+          "title": "SIT Aviation Team"
+        },
+        {
+          "src": "/images/sit-aviation-event.jpeg",
+          "title": "Community Outreach"
+        }
+      ]
+    }
+  },
+  "education": [
+    {
+      "degree": "BSc (Hons) Computing Science",
+      "school": "SIT × University of Glasgow",
+      "period": "2024 – 2027"
+    },
+    {
+      "degree": "Diploma in Aviation Management",
+      "school": "Republic Polytechnic",
+      "period": "2019 – 2022"
+    }
+  ],
+  "experiences": [
+    {
+      "role": "President",
+      "company": "SIT Aviation Society",
+      "period": "Jan 2025 – Present",
+      "description": "Founded and lead the aviation interest group at Singapore Institute of Technology. Organize drone workshops, flight simulation experiences, and industry networking events. Building a community of aviation enthusiasts.",
+      "highlight": "Founder & President",
+      "icon": "plane"
+    },
+    {
+      "role": "Platoon Commander",
+      "company": "Singapore Army",
+      "period": "Sep 2023 – Aug 2024",
+      "description": "Led Motorisation Support Company (MSC) as Belrex (PCSV) Platoon Commander. Secondary appointment as Head of Drone Simulation Training. Managed company HR and logistics operations.",
+      "highlight": "NSF of The Year 2024 · Presidential Garden Reception Invitee",
+      "icon": "shield"
+    },
+    {
+      "role": "Officer Cadet Trainee",
+      "company": "Singapore Army",
+      "period": "Dec 2022 – Sep 2023",
+      "description": "Completed 19th Motorised Infantry Officer Course. Certified to operate Terrex Infantry Carrier Vehicle (ICV) as Operator and Vehicle Commander. Developed military leadership skills.",
+      "highlight": "Commissioned Officer",
+      "icon": "shield"
+    },
+    {
+      "role": "RPA Developer",
+      "company": "Changi Airport Group",
+      "period": "Feb 2022 – Jul 2022",
+      "description": "Migrated RPA processes to enterprise cloud UiPath Orchestrator. Designed and programmed RPA workflows for Airport Operations Management. Collaborated with cross-functional teams.",
+      "highlight": "Process Automation Expert",
+      "icon": "briefcase"
+    },
+    {
+      "role": "RPA Intern",
+      "company": "Changi Airport Group",
+      "period": "Sep 2021 – Jan 2022",
+      "description": "Built Robotic Process Automation solutions for Seletar Warehouse Team. Learned enterprise-grade automation development and UiPath best practices.",
+      "highlight": "Internship",
+      "icon": "briefcase"
+    },
+    {
+      "role": "President, Aviators Interest Group",
+      "company": "Republic Polytechnic",
+      "period": "Mar 2021 – Feb 2022",
+      "description": "Led aviation enthusiast community with 100+ members. Supervised EXCO members and organized flight experiences, drone workshops, and industry visits to Changi Airport.",
+      "highlight": "Student Leadership",
+      "icon": "plane"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Programming Languages",
+      "icon": "code",
+      "color": "from-purple-500 to-violet-500",
+      "skills": ["Python", "TypeScript", "JavaScript", "C", "C++", "Java", "Kotlin", "Rust", "SQL", "HTML/CSS", "Assembly"]
+    },
+    {
+      "name": "Frameworks & Libraries",
+      "icon": "rocket",
+      "color": "from-cyan-500 to-blue-500",
+      "skills": ["React", "Node.js", "Express", "Pandas", "NumPy", "OpenCV", "DJI SDK", "Pico SDK", "ROS2"]
+    },
+    {
+      "name": "Cloud & DevOps",
+      "icon": "cloud",
+      "color": "from-blue-500 to-indigo-500",
+      "skills": ["Docker", "AWS", "Git/GitHub", "CI/CD", "Linux/Unix", "UiPath Cloud"]
+    },
+    {
+      "name": "Databases",
+      "icon": "database",
+      "color": "from-green-500 to-emerald-500",
+      "skills": ["PostgreSQL", "MySQL", "MongoDB", "SQLite"]
+    },
+    {
+      "name": "Robotics & Autonomous Systems",
+      "icon": "cpu",
+      "color": "from-orange-500 to-amber-500",
+      "skills": ["UAV/Drone Technology", "Computer Vision", "ROS2", "Autonomous Navigation", "Sensor Integration", "Flight Controllers"]
+    },
+    {
+      "name": "IoT & Embedded Systems",
+      "icon": "cpu",
+      "color": "from-pink-500 to-rose-500",
+      "skills": ["Raspberry Pi", "Arduino", "CoAP Protocol", "M2M Communication", "Embedded C", "MQTT"]
+    },
+    {
+      "name": "Automation & RPA",
+      "icon": "bot",
+      "color": "from-violet-500 to-purple-500",
+      "skills": ["UiPath Studio", "UiPath Orchestrator", "Process Automation", "Workflow Design", "Bot Development"]
+    },
+    {
+      "name": "Leadership & Soft Skills",
+      "icon": "users",
+      "color": "from-teal-500 to-cyan-500",
+      "skills": ["Project Management", "Team Leadership", "Digital Transformation", "Public Speaking", "Strategic Planning", "Cross-functional Collaboration"]
+    }
+  ],
+  "certifications": [
+    { "name": "AI4I® – Literacy in AI", "issuer": "AI Singapore", "date": "Oct 2024" },
+    { "name": "RPA Developer Advanced", "issuer": "UiPath", "date": "Jan 2022" },
+    { "name": "RPA Developer Foundation", "issuer": "UiPath", "date": "2021" },
+    { "name": "Automation Explorer", "issuer": "UiPath", "date": "2021" },
+    { "name": "Automation Business Analyst Foundation", "issuer": "UiPath", "date": "2021" }
+  ],
+  "additionalCertificationsCount": 6,
+  "notableProjects": [
+    {
+      "name": "Changi Airport T4 Roblox Simulation",
+      "description": "Built immersive airport simulation for public engagement",
+      "association": "Changi Airport Group"
+    },
+    {
+      "name": "Skyports Terminal Operations Manual",
+      "description": "Developed operational documentation for vertiport operations",
+      "association": "Republic Polytechnic"
+    },
+    {
+      "name": "Singapore Space Challenge 2021",
+      "description": "Participated in national space technology competition",
+      "association": "Republic Polytechnic"
+    }
+  ],
+  "repositories": [
+    { "name": "Neighbourly", "description": "Cloud Distribution & System Project - Full-stack community platform", "language": "TypeScript", "stars": 1, "url": "https://github.com/tzekailim-SIT/Neighbourly", "isPrivate": false, "featured": true },
+    { "name": "AutonomousDrone", "description": "Autonomous flight scripts for DJI Tello drone with computer vision", "language": "Python", "stars": 1, "url": "https://github.com/tzekailim-SIT/AutonomousDrone", "isPrivate": false, "featured": true },
+    { "name": "CoAP-IoT-System", "description": "Lightweight M2M communication system using C and Pico SDK", "language": "C", "stars": 1, "url": "https://github.com/tzekailim-SIT/CoAP-IoT-System", "isPrivate": false, "featured": true },
+    { "name": "Flight-Routing-Machine", "description": "High-efficiency Python search algorithm for travel data processing", "language": "Python", "stars": 0, "url": "https://github.com/tzekailim-SIT/Flight-Routing-Machine", "isPrivate": false, "featured": false },
+    { "name": "OS-Algorithms-Systems", "description": "Operating Systems Project - Process scheduling & memory management", "language": "C", "stars": 1, "url": "https://github.com/tzekailim-SIT/OS-Algorithms-Systems", "isPrivate": false, "featured": false },
+    { "name": "BugTrackingWebApp", "description": "Web-based bug tracking application with issue management", "language": "HTML", "stars": 1, "url": "https://github.com/tzekailim-SIT/BugTrackingWebApp", "isPrivate": false, "featured": false },
+    { "name": "TicTacToeGame", "description": "Classic game implementation in C with AI opponent", "language": "C", "stars": 1, "url": "https://github.com/tzekailim-SIT/TicTacToeGame", "isPrivate": false, "featured": false },
+    { "name": "SupplyChainDashboard", "description": "Data analytics dashboard for supply chain optimization", "language": "Jupyter Notebook", "stars": 1, "url": "https://github.com/tzekailim-SIT/SupplyChainDashboard", "isPrivate": false, "featured": false },
+    { "name": "AV-Dashboard", "description": "Autonomous Vehicle Dashboard with real-time telemetry", "language": "TypeScript", "stars": 1, "url": "https://github.com/tzekailim-SIT/AV-Dashboard", "isPrivate": true, "featured": false },
+    { "name": "AR-Navigation", "description": "Augmented Reality Navigation App for indoor wayfinding", "language": "Kotlin", "stars": 0, "url": "https://github.com/tzekailim-SIT/AR-Navigation", "isPrivate": true, "featured": false },
+    { "name": "ros-learning-environment", "description": "ROS2 Learning and Testing Environment for CS students", "language": "Dockerfile", "stars": 0, "url": "https://github.com/tzekailim-SIT/ros-learning-environment", "isPrivate": true, "featured": false },
+    { "name": "CoAP-Trivia-Game", "description": "Multiplayer trivia game using CoAP protocol", "language": "C++", "stars": 1, "url": "https://github.com/tzekailim-SIT/CoAP-Trivia-Game", "isPrivate": true, "featured": false }
+  ],
+  "contact": {
+    "heading": "Let's Connect",
+    "description": "I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision. Whether it's aviation tech, automation, or innovative software solutions."
+  },
+  "footer": {
+    "copyright": "© 2025 Tze Kai Lim. Built with passion."
+  }
+}

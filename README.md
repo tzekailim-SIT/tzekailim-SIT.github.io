@@ -6,154 +6,241 @@ A modern, minimalistic portfolio website inspired by Apple Intelligence design a
 
 ---
 
-## Features
+## ✨ Features
 
 - **Vibrant Futuristic Design** - Dark theme with animated gradient orbs and neon glow effects
 - **Apple Intelligence Aesthetic** - Clean typography, glassmorphism cards, subtle animations
+- **Easy Content Editing** - All content in a single JSON file (no coding required!)
 - **Responsive Layout** - Optimized for desktop, tablet, and mobile devices
 - **Smooth Animations** - Powered by Framer Motion for fluid transitions
-- **Google Analytics** - Built-in visitor tracking (G-YRHZF0NZPY)
+- **Google Analytics** - Built-in visitor tracking
 - **GitHub Pages Deployment** - Free hosting with custom domain support
 
 ---
 
-## Tech Stack
+## ✏️ Easy Content Editing (No Coding Required!)
 
-| Technology | Purpose |
-|------------|---------|
-| React 19 | UI Framework |
-| TypeScript | Type Safety |
-| Tailwind CSS 4 | Styling |
-| Framer Motion | Animations |
-| Vite | Build Tool |
-| GitHub Pages | Hosting |
+All portfolio content is stored in a single JSON file: **`config.json`**
 
----
+You can edit this file directly on GitHub to update your portfolio instantly!
 
-## Project Structure
+### How to Edit on GitHub (Easiest Method)
 
-```
-portfolio/
-├── client/
-│   ├── public/
-│   │   └── images/          # Static images
-│   ├── src/
-│   │   ├── components/      # Reusable UI components
-│   │   ├── pages/
-│   │   │   └── Home.tsx     # Main portfolio page
-│   │   ├── App.tsx          # Root component
-│   │   ├── index.css        # Global styles & theme
-│   │   └── main.tsx         # Entry point
-│   └── index.html           # HTML template
-├── dist/                    # Build output
-└── README.md
-```
+1. Go to your repository: [https://github.com/tzekailim-SIT/tzekailim-SIT.github.io](https://github.com/tzekailim-SIT/tzekailim-SIT.github.io)
+2. Click on `config.json`
+3. Click the **pencil icon** (Edit this file)
+4. Make your changes
+5. Click **Commit changes**
+6. Your site will update automatically in 1-2 minutes!
 
 ---
 
-## Local Development Setup
+## 📝 What You Can Edit in config.json
+
+### Profile Information
+```json
+"profile": {
+  "name": "Tze Kai",
+  "fullName": "Tze Kai Lim",
+  "title": "Your title here",
+  "tagline": "Computing Science · Aviation · Innovation",
+  "bio": "Your bio paragraph...",
+  "photo": "/images/tzekai-profile.jpeg",
+  "email": "your@email.com",
+  "linkedin": "https://linkedin.com/in/...",
+  "github": "https://github.com/..."
+}
+```
+
+### Statistics
+```json
+"stats": {
+  "connections": "500+",
+  "followers": "718",
+  "certifications": "11",
+  "repositories": "21"
+}
+```
+
+### About Section
+```json
+"about": {
+  "journey": "First paragraph of your story...",
+  "journeyExtended": "Second paragraph...",
+  "achievements": [
+    { "text": "Achievement 1", "color": "cyan" },
+    { "text": "Achievement 2", "color": "purple" }
+  ],
+  "photos": {
+    "main": {
+      "src": "/images/your-photo.jpeg",
+      "title": "Photo Title",
+      "subtitle": "Photo subtitle"
+    },
+    "gallery": [
+      { "src": "/images/photo1.jpeg", "title": "Title 1" },
+      { "src": "/images/photo2.jpeg", "title": "Title 2" }
+    ]
+  }
+}
+```
+
+### Education
+```json
+"education": [
+  {
+    "degree": "BSc (Hons) Computing Science",
+    "school": "SIT × University of Glasgow",
+    "period": "2024 – 2027"
+  }
+]
+```
+
+### Work Experience
+```json
+"experiences": [
+  {
+    "role": "Job Title",
+    "company": "Company Name",
+    "period": "Jan 2025 – Present",
+    "description": "What you did...",
+    "highlight": "Key achievement",
+    "icon": "briefcase"
+  }
+]
+```
+
+**Available icons:** `plane`, `shield`, `briefcase`, `code`, `rocket`, `cloud`, `database`, `cpu`, `bot`, `users`
+
+### Skills
+```json
+"skills": [
+  {
+    "name": "Category Name",
+    "icon": "code",
+    "color": "from-purple-500 to-violet-500",
+    "skills": ["Skill 1", "Skill 2", "Skill 3"]
+  }
+]
+```
+
+### Certifications
+```json
+"certifications": [
+  { "name": "Certification Name", "issuer": "Issuing Org", "date": "Oct 2024" }
+],
+"additionalCertificationsCount": 6
+```
+
+### Notable Projects
+```json
+"notableProjects": [
+  {
+    "name": "Project Name",
+    "description": "What you built",
+    "association": "Company/School"
+  }
+]
+```
+
+### GitHub Repositories
+```json
+"repositories": [
+  {
+    "name": "RepoName",
+    "description": "Description",
+    "language": "TypeScript",
+    "stars": 1,
+    "url": "https://github.com/...",
+    "isPrivate": false,
+    "featured": true
+  }
+]
+```
+
+### Contact & Footer
+```json
+"contact": {
+  "heading": "Let's Connect",
+  "description": "Your contact message..."
+},
+"footer": {
+  "copyright": "© 2025 Your Name. Built with passion."
+}
+```
+
+---
+
+## 🖼️ How to Change Photos
+
+1. **Upload new photos** to the `images/` folder in your repository
+2. **Update the path** in `config.json` to point to your new image
+3. Commit changes
+
+**Supported formats:** `.jpeg`, `.jpg`, `.png`, `.webp`
+
+**Example:**
+```json
+"photo": "/images/my-new-photo.jpeg"
+```
+
+---
+
+## 💻 Local Development Setup
 
 ### Prerequisites
-
 - Node.js 18+ installed
 - pnpm package manager (`npm install -g pnpm`)
 
 ### Installation
 
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/tzekailim-SIT/tzekailim-SIT.github.io.git
-   cd tzekailim-SIT.github.io
-   ```
+```bash
+# Clone the repository
+git clone https://github.com/tzekailim-SIT/tzekailim-SIT.github.io.git
+cd tzekailim-SIT.github.io
 
-2. **Install dependencies:**
-   ```bash
-   pnpm install
-   ```
+# Install dependencies
+pnpm install
 
-3. **Start development server:**
-   ```bash
-   pnpm dev
-   ```
+# Start development server
+pnpm dev
+```
 
-4. **Open in browser:**
-   ```
-   http://localhost:3000
-   ```
+The site will be available at `http://localhost:3000`
+
+### Building for Production
+
+```bash
+pnpm build
+```
+
+Output files will be in the `dist/public/` folder.
 
 ---
 
-## How to Edit the Portfolio
+## 📁 Project Structure
 
-### Editing Personal Information
-
-Open `client/src/pages/Home.tsx` and modify the following sections:
-
-#### 1. Update Your Name & Title
-```tsx
-// Around line 170-180
-<motion.h1 className="text-6xl ...">
-  <span className="gradient-text">Your Name</span>
-</motion.h1>
-
-<motion.p className="text-xl ...">
-  Your University / Company
-</motion.p>
+```
+├── client/
+│   ├── public/
+│   │   ├── config.json      # ← EDIT THIS FILE for content changes
+│   │   └── images/          # ← PUT YOUR PHOTOS HERE
+│   ├── src/
+│   │   ├── pages/
+│   │   │   └── Home.tsx     # Main page component
+│   │   ├── hooks/
+│   │   │   └── useConfig.ts # Config loader hook
+│   │   └── index.css        # Styles and animations
+│   └── index.html           # HTML template
+├── README.md                # This file
+└── package.json             # Dependencies
 ```
 
-#### 2. Update Social Links
-```tsx
-// Around line 190-210
-<a href="https://github.com/YOUR_USERNAME" ...>
-<a href="https://www.linkedin.com/in/YOUR_PROFILE/" ...>
-<a href="mailto:YOUR_EMAIL@example.com" ...>
-```
+---
 
-#### 3. Update Projects/Repositories
-```tsx
-// Around line 20-35
-const repositories = [
-  { 
-    name: "Project Name", 
-    description: "Project description", 
-    language: "TypeScript", 
-    stars: 1, 
-    url: "https://github.com/...", 
-    isPrivate: false,
-    featured: true  // Set to true for featured projects
-  },
-  // Add more projects...
-];
-```
+## 🎨 Customizing the Design (Advanced)
 
-#### 4. Update Skills
-```tsx
-// Around line 40-55
-const skills = [
-  { name: "Python", category: "language" },
-  { name: "TypeScript", category: "language" },
-  // Add more skills...
-];
-```
-
-#### 5. Update Experience
-```tsx
-// Around line 55-75
-const experiences = [
-  {
-    role: "Your Role",
-    company: "Company Name",
-    period: "2022 – 2024",
-    description: "What you did...",
-    highlight: "Key achievement",
-  },
-  // Add more experiences...
-];
-```
-
-### Customizing the Design
-
-#### Change Colors
+### Change Colors
 Edit `client/src/index.css` to modify the color scheme:
 
 ```css
@@ -161,134 +248,51 @@ Edit `client/src/index.css` to modify the color scheme:
 .gradient-text {
   background: linear-gradient(135deg, #bf5af2 0%, #5e5ce6 40%, #32d4de 70%, #ff375f 100%);
 }
-
-/* Background orb colors */
-.animate-pulse-vibrant {
-  /* Modify the gradient colors here */
-}
 ```
 
-#### Change Fonts
+### Change Fonts
 Edit `client/index.html` to use different Google Fonts:
 
 ```html
 <link href="https://fonts.googleapis.com/css2?family=YOUR_FONT:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
 ```
 
-Then update `client/src/index.css`:
-```css
---font-sans: 'Your Font', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
-```
+---
+
+## 🚀 Deployment
+
+This site is automatically deployed via GitHub Pages whenever you push to the `main` branch.
+
+**To manually deploy:**
+1. Make your changes
+2. Commit and push to `main`
+3. GitHub Pages will automatically rebuild (1-2 minutes)
 
 ---
 
-## Deployment
-
-### Build for Production
-
-```bash
-pnpm build
-```
-
-The built files will be in `dist/public/`.
-
-### Deploy to GitHub Pages
-
-1. **Copy build files:**
-   ```bash
-   cp -r dist/public/* /path/to/your-github-pages-repo/
-   ```
-
-2. **Commit and push:**
-   ```bash
-   cd /path/to/your-github-pages-repo/
-   git add .
-   git commit -m "Update portfolio"
-   git push origin main
-   ```
-
-3. **Enable GitHub Pages:**
-   - Go to your repository Settings → Pages
-   - Source: Deploy from branch
-   - Branch: main / (root)
-   - Click Save
-
-Your site will be live at `https://YOUR_USERNAME.github.io` within a few minutes.
-
----
-
-## Google Analytics
-
-The site includes Google Analytics tracking. To use your own:
-
-1. Create a Google Analytics 4 property at [analytics.google.com](https://analytics.google.com)
-2. Get your Measurement ID (format: `G-XXXXXXXXXX`)
-3. Update `client/index.html`:
-
-```html
-<!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-YOUR_ID"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-YOUR_ID');
-</script>
-```
-
----
-
-## Adding New Sections
-
-To add a new section (e.g., Blog, Certifications):
-
-1. Add the section in `Home.tsx`:
-```tsx
-{/* New Section */}
-<section id="new-section" className="py-32 relative">
-  <div className="container mx-auto">
-    <motion.div
-      initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1 }}
-      viewport={{ once: true }}
-    >
-      <h2 className="text-sm font-medium text-white/40 uppercase tracking-[0.3em] mb-12">
-        Section Title
-      </h2>
-      {/* Your content here */}
-    </motion.div>
-  </div>
-</section>
-```
-
-2. Add navigation link:
-```tsx
-<a href="#new-section" className="text-sm text-white/50 hover:text-white transition-colors">
-  New Section
-</a>
-```
-
----
-
-## Troubleshooting
+## 🔧 Troubleshooting
 
 | Issue | Solution |
 |-------|----------|
-| Styles not updating | Clear browser cache or hard refresh (Ctrl+Shift+R) |
-| Build fails | Run `pnpm install` to ensure all dependencies are installed |
-| Images not showing | Ensure images are in `client/public/images/` and paths start with `/images/` |
-| Animations laggy | Reduce number of animated elements or simplify animations |
+| Changes not appearing | Wait 1-2 minutes, then hard refresh (Ctrl+Shift+R) |
+| JSON error | Validate your JSON at [jsonlint.com](https://jsonlint.com) |
+| Images not loading | Ensure path starts with `/images/` and file exists |
+| Build fails | Run `pnpm install` to ensure dependencies are installed |
 
 ---
 
-## License
+## 📄 License
 
 MIT License - Feel free to use this template for your own portfolio!
 
 ---
 
-## Credits
+## 🙏 Credits
 
-- Design inspired by Apple Intelligence UI
-- Icons by [Lucide](https://lucide.dev/)
-- Animations by [Framer Motion](https://www.framer.com/motion/)
+Built with:
+- React 19 & TypeScript
+- Tailwind CSS 4
+- Framer Motion
+- Lucide Icons
+
+Design inspired by Apple Intelligence aesthetic.
