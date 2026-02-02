@@ -11,6 +11,8 @@ A modern, minimalistic portfolio website inspired by Apple Intelligence design a
 - **Vibrant Futuristic Design** - Dark theme with animated gradient orbs and neon glow effects
 - **Apple Intelligence Aesthetic** - Clean typography, glassmorphism cards, subtle animations
 - **Easy Content Editing** - All content in a single JSON file (no coding required!)
+- **Project Demo Support** - Showcase GIFs/videos for your projects
+- **Resume Request Form** - Protect your resume with Google Form integration
 - **Responsive Layout** - Optimized for desktop, tablet, and mobile devices
 - **Smooth Animations** - Powered by Framer Motion for fluid transitions
 - **Google Analytics** - Built-in visitor tracking
@@ -48,7 +50,8 @@ You can edit this file directly on GitHub to update your portfolio instantly!
   "photo": "/images/tzekai-profile.jpeg",
   "email": "your@email.com",
   "linkedin": "https://linkedin.com/in/...",
-  "github": "https://github.com/..."
+  "github": "https://github.com/...",
+  "resumeRequestUrl": "https://forms.gle/YOUR_FORM_ID"
 }
 ```
 
@@ -143,7 +146,7 @@ You can edit this file directly on GitHub to update your portfolio instantly!
 ]
 ```
 
-### GitHub Repositories
+### GitHub Repositories (with Demo Support)
 ```json
 "repositories": [
   {
@@ -153,7 +156,9 @@ You can edit this file directly on GitHub to update your portfolio instantly!
     "stars": 1,
     "url": "https://github.com/...",
     "isPrivate": false,
-    "featured": true
+    "featured": true,
+    "demoImage": "/images/demos/repo-demo.gif",
+    "demoVideo": "/images/demos/repo-demo.mp4"
   }
 ]
 ```
@@ -171,18 +176,139 @@ You can edit this file directly on GitHub to update your portfolio instantly!
 
 ---
 
+## 🎬 Adding Project Demo GIFs/Videos
+
+Showcase your projects with demo GIFs or videos! Here's how:
+
+### Step 1: Create Your Demo
+
+**Option A: Screen Recording (Recommended)**
+- Use [OBS Studio](https://obsproject.com/) (free) or QuickTime (Mac)
+- Record your project in action
+- Export as MP4 or convert to GIF
+
+**Option B: Convert Video to GIF**
+- Use [ezgif.com](https://ezgif.com/video-to-gif) (free online tool)
+- Upload your MP4 video
+- Optimize for web (max 5MB recommended)
+
+**Option C: Use LICEcap (Windows/Mac)**
+- Download [LICEcap](https://www.cockos.com/licecap/)
+- Record directly to GIF format
+
+### Step 2: Upload Your Demo
+
+1. Go to your repository on GitHub
+2. Navigate to the `images/` folder
+3. Create a `demos/` subfolder (click "Add file" → "Create new file" → type `demos/.gitkeep`)
+4. Upload your GIF/MP4 files to `images/demos/`
+
+### Step 3: Update config.json
+
+Add the demo paths to your repository entry:
+
+```json
+{
+  "name": "AutonomousDrone",
+  "description": "Autonomous flight scripts for DJI Tello drone",
+  "language": "Python",
+  "stars": 1,
+  "url": "https://github.com/tzekailim-SIT/AutonomousDrone",
+  "isPrivate": false,
+  "featured": true,
+  "demoImage": "/images/demos/drone-demo.gif",
+  "demoVideo": ""
+}
+```
+
+**Tips:**
+- Use `demoImage` for GIFs (auto-plays, no sound)
+- Use `demoVideo` for MP4s (with play controls)
+- Keep GIFs under 5MB for fast loading
+- Use 720p resolution for best quality/size balance
+
+---
+
+## 📄 Setting Up Resume Request Form
+
+Protect your resume by requiring visitors to request it through a form:
+
+### Step 1: Create Google Form
+
+1. Go to [forms.google.com](https://forms.google.com)
+2. Click **+ Blank** to create a new form
+3. Set title: "Resume Request - Tze Kai Lim"
+4. Add description: "Please fill out this form to request my resume."
+
+### Step 2: Add Form Fields
+
+| Field | Type | Required |
+|-------|------|----------|
+| Full Name | Short answer | Yes |
+| Email Address | Short answer (with email validation) | Yes |
+| Company/Organization | Short answer | No |
+| Purpose | Multiple choice (Recruitment, Networking, Academic, Other) | Yes |
+| Message | Paragraph | No |
+
+### Step 3: Get Form Link
+
+1. Click **Send** button (top right)
+2. Click the **Link icon** (chain icon)
+3. Check "Shorten URL"
+4. Copy the link (e.g., `https://forms.gle/XXXXXXXXX`)
+
+### Step 4: Update config.json
+
+```json
+"profile": {
+  ...
+  "resumeRequestUrl": "https://forms.gle/YOUR_ACTUAL_FORM_ID"
+}
+```
+
+The "Request Resume" button will automatically appear once you add a valid URL!
+
+---
+
 ## 🖼️ How to Change Photos
 
-1. **Upload new photos** to the `images/` folder in your repository
-2. **Update the path** in `config.json` to point to your new image
-3. Commit changes
+### Update Profile Photo
 
-**Supported formats:** `.jpeg`, `.jpg`, `.png`, `.webp`
+1. Take a professional headshot (square crop works best)
+2. Upload to `images/` folder in your repository
+3. Update `config.json`:
 
-**Example:**
 ```json
-"photo": "/images/my-new-photo.jpeg"
+"profile": {
+  "photo": "/images/my-new-profile.jpeg"
+}
 ```
+
+### Update About Section Photos
+
+```json
+"about": {
+  "photos": {
+    "main": {
+      "src": "/images/my-main-photo.jpeg",
+      "title": "Photo Title",
+      "subtitle": "Photo description"
+    },
+    "gallery": [
+      { "src": "/images/gallery-1.jpeg", "title": "Event 1" },
+      { "src": "/images/gallery-2.jpeg", "title": "Event 2" }
+    ]
+  }
+}
+```
+
+**Photo Tips:**
+- Use JPEG for photos (smaller file size)
+- Use PNG for screenshots with text
+- Recommended sizes:
+  - Profile photo: 400x400px
+  - Main photo: 800x600px
+  - Gallery photos: 600x400px
 
 ---
 
@@ -225,6 +351,7 @@ Output files will be in the `dist/public/` folder.
 │   ├── public/
 │   │   ├── config.json      # ← EDIT THIS FILE for content changes
 │   │   └── images/          # ← PUT YOUR PHOTOS HERE
+│   │       └── demos/       # ← PUT PROJECT DEMOS HERE
 │   ├── src/
 │   │   ├── pages/
 │   │   │   └── Home.tsx     # Main page component
@@ -277,6 +404,8 @@ This site is automatically deployed via GitHub Pages whenever you push to the `m
 | Changes not appearing | Wait 1-2 minutes, then hard refresh (Ctrl+Shift+R) |
 | JSON error | Validate your JSON at [jsonlint.com](https://jsonlint.com) |
 | Images not loading | Ensure path starts with `/images/` and file exists |
+| Demo not playing | Check file format (GIF/MP4) and file size (<10MB) |
+| Resume button not showing | Ensure `resumeRequestUrl` is not the placeholder value |
 | Build fails | Run `pnpm install` to ensure dependencies are installed |
 
 ---

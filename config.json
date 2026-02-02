@@ -8,7 +8,8 @@
     "photo": "/images/tzekai-profile.jpeg",
     "email": "Tzekailim@outlook.sg",
     "linkedin": "https://www.linkedin.com/in/tzekailim/",
-    "github": "https://github.com/tzekailim-SIT"
+    "github": "https://github.com/tzekailim-SIT",
+    "resumeRequestUrl": "https://forms.gle/YOUR_FORM_ID"
   },
   "stats": {
     "connections": "500+",
@@ -181,9 +182,39 @@
     }
   ],
   "repositories": [
-    { "name": "Neighbourly", "description": "Cloud Distribution & System Project - Full-stack community platform", "language": "TypeScript", "stars": 1, "url": "https://github.com/tzekailim-SIT/Neighbourly", "isPrivate": false, "featured": true },
-    { "name": "AutonomousDrone", "description": "Autonomous flight scripts for DJI Tello drone with computer vision", "language": "Python", "stars": 1, "url": "https://github.com/tzekailim-SIT/AutonomousDrone", "isPrivate": false, "featured": true },
-    { "name": "CoAP-IoT-System", "description": "Lightweight M2M communication system using C and Pico SDK", "language": "C", "stars": 1, "url": "https://github.com/tzekailim-SIT/CoAP-IoT-System", "isPrivate": false, "featured": true },
+    { 
+      "name": "Neighbourly", 
+      "description": "Cloud Distribution & System Project - Full-stack community platform", 
+      "language": "TypeScript", 
+      "stars": 1, 
+      "url": "https://github.com/tzekailim-SIT/Neighbourly", 
+      "isPrivate": false, 
+      "featured": true,
+      "demoImage": "",
+      "demoVideo": ""
+    },
+    { 
+      "name": "AutonomousDrone", 
+      "description": "Autonomous flight scripts for DJI Tello drone with computer vision", 
+      "language": "Python", 
+      "stars": 1, 
+      "url": "https://github.com/tzekailim-SIT/AutonomousDrone", 
+      "isPrivate": false, 
+      "featured": true,
+      "demoImage": "",
+      "demoVideo": ""
+    },
+    { 
+      "name": "CoAP-IoT-System", 
+      "description": "Lightweight M2M communication system using C and Pico SDK", 
+      "language": "C", 
+      "stars": 1, 
+      "url": "https://github.com/tzekailim-SIT/CoAP-IoT-System", 
+      "isPrivate": false, 
+      "featured": true,
+      "demoImage": "",
+      "demoVideo": ""
+    },
     { "name": "Flight-Routing-Machine", "description": "High-efficiency Python search algorithm for travel data processing", "language": "Python", "stars": 0, "url": "https://github.com/tzekailim-SIT/Flight-Routing-Machine", "isPrivate": false, "featured": false },
     { "name": "OS-Algorithms-Systems", "description": "Operating Systems Project - Process scheduling & memory management", "language": "C", "stars": 1, "url": "https://github.com/tzekailim-SIT/OS-Algorithms-Systems", "isPrivate": false, "featured": false },
     { "name": "BugTrackingWebApp", "description": "Web-based bug tracking application with issue management", "language": "HTML", "stars": 1, "url": "https://github.com/tzekailim-SIT/BugTrackingWebApp", "isPrivate": false, "featured": false },
